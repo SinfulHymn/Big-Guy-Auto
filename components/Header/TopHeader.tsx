@@ -36,29 +36,29 @@ const TopHeader = () => {
                 </Link>
             </div>
 
-            <div className='flex flex-col justify-center items-center min-w-full'>
-                <div className='flex justify-center items-center min-w-full'>
+            <div className='flex flex-col justify-center items-center min-w-full mt-4 px-1.5'>
+                <div className='flex justify-center items-center'>
                     <Image
                         src={PhoneIcon}
                         alt='Phone Icon'
                         width={30}
                         height={30}
                     />
-                    <div className='flex flex-col justify-center items-center'>
-                        <p>Call Us Now</p>
-                        <p>+1 818 645 7172</p>
+                    <div className='flex flex-col justify-center items-center ml-1.5 border-b-2'>
+                        <p className=' font-semibold text-sm'>Call Us Now</p>
+                        <p className=' font-thin text-sm'>+1 818 645 7172</p>
                     </div>
                 </div>
-                <div className='flex justify-center items-center min-w-full'>
+                <div className='flex justify-center items-center ml-1.5'>
                     <Image
                         src={PhoneIcon}
                         alt='Phone Icon'
                         width={30}
                         height={30}
                     />
-                    <div className='flex flex-col justify-center items-center'>
-                        <p>Opening Hours</p>
-                        <p>Mon - Fri 8:00 - 5:00</p>
+                    <div className='flex flex-col justify-center items-center '>
+                        <p className='font-semibold text-sm'>Opening Hours</p>
+                        <p className='font-thin text-sm'>Mon - Fri 8:00 - 5:00</p>
                     </div>
                 </div>
             </div>
