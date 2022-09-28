@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image';
-import Logo from 'public/images/Logo.png';
+import Logo from 'public/images/logo.png';
 import Link from 'next/link';
 import PhoneIcon from 'public/images/icons/header-phone.png';
-
+import TimerIcon from 'public/images/icons/header-timer.png';
 
 // import Link from 'next/link'
 // import { useRouter } from 'next/router'
@@ -16,53 +16,79 @@ import PhoneIcon from 'public/images/icons/header-phone.png';
 // import { useAuth0 } from '@auth0/auth0-react'
 // import { useAuth0 as useAuth0React } from '@auth0/auth0-react'
 
-
-
+// notes: TopHeader is a container for Logo, Phone, and Timer Icon
+// css layers: 
+//  - flex flex-wrap py-5
+//  - flex justify-center items-center min-w-full
 
 const TopHeader = () => {
     return (
-        <div className='flex flex-wrap py-5'>
+        // main container
+        <div className='py-5'>
 
-            <div className='flex justify-center items-center min-w-full'>
-                <Link
-                    href='/'
-                >
-                    <Image
-                        src={Logo}
-                        alt='Logo'
-                        width={280}
-                        height={80}
-                    />
-                </Link>
-            </div>
+            {/* content container mx-auto */}
+            <div className='container mx-auto flex justify-between px-4'>
 
-            <div className='flex flex-col justify-center items-center min-w-full mt-4 px-1.5'>
-                <div className='flex justify-center items-center'>
-                    <Image
-                        src={PhoneIcon}
-                        alt='Phone Icon'
-                        width={30}
-                        height={30}
-                    />
-                    <div className='flex flex-col justify-center items-center ml-1.5 border-b-2'>
-                        <p className=' font-semibold text-sm'>Call Us Now</p>
-                        <p className=' font-thin text-sm'>+1 818 645 7172</p>
-                    </div>
+                {/* logo */}
+                <div className=''>
+                    <a href="/">
+                        <Image
+                            src={Logo}
+                            alt='Logo'
+                            width={280}
+                            height={80}
+                        />
+                    </a>
                 </div>
-                <div className='flex justify-center items-center ml-1.5'>
-                    <Image
-                        src={PhoneIcon}
-                        alt='Phone Icon'
-                        width={30}
-                        height={30}
-                    />
-                    <div className='flex flex-col justify-center items-center '>
-                        <p className='font-semibold text-sm'>Opening Hours</p>
-                        <p className='font-thin text-sm'>Mon - Fri 8:00 - 5:00</p>
-                    </div>
-                </div>
-            </div>
+                {/* end logo */}
 
+                {/* phone and hours  */}
+                <div className='flex justify-center items-center mt-4 px-4'>
+
+                    {/* call us now */}
+                    <div className='flex justify-center items-center px-4 border-slate-400 border-r'>
+                        <div className=' mr-2 mt-1'>
+
+                            <Image
+                                src={PhoneIcon}
+                                alt='Phone Icon'
+                                width={30}
+                                height={30}
+                            />
+                        </div>
+
+                        <div className='flex flex-col ml-1.5 '>
+                            <p className=' font-semibold text-sm'>Call Us Now</p>
+                            <p className=' font-light text-sm'>+1 (818) 645 7172</p>
+                            <p className=' font-semibold text-sm'>Hablamos Espanol!</p>
+                        </div>
+                    </div>
+                    {/* end call us now */}
+
+                    {/* hours */}
+                    <div className='flex justify-center items-center ml-1.5 px-4'>
+                        <div className=' mr-2 mt-1'>
+                            <Image
+                                src={TimerIcon}
+                                alt='Timer Icon'
+                                width={30}
+                                height={30}
+                            />
+                        </div>
+                        <div className='flex flex-col justify-center items-center '>
+                            <p className='font-semibold text-sm'>Opening Hours</p>
+                            <p className='font-thin text-sm'>Mon - Fri 8:00 - 5:00</p>
+                        </div>
+                    </div>
+                    {/* end hours */}
+
+                </div>
+                {/* end phone and hours */}
+
+            </div>
+            {/* end content container */}
+
+            {/* // end of main container */}
         </div>
     );
 }
