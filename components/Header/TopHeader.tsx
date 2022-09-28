@@ -49,12 +49,7 @@ const TopHeader = () => {
                     <div className='flex justify-center items-center px-4 border-slate-400 border-r'>
                         <div className=' mr-2 mt-1'>
 
-                            <Image
-                                src={PhoneIcon}
-                                alt='Phone Icon'
-                                width={30}
-                                height={30}
-                            />
+                            <svg xmlns="http://www.w3.org/2000/svg" className=" text-red-600 ionicon" viewBox="0 0 512 512"><title>Phone Portrait</title><rect x="128" y="16" width="256" height="480" rx="48" ry="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M176 16h24a8 8 0 018 8h0a16 16 0 0016 16h64a16 16 0 0016-16h0a8 8 0 018-8h24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
                         </div>
 
                         <div className='flex flex-col ml-1.5 '>
@@ -68,12 +63,8 @@ const TopHeader = () => {
                     {/* hours */}
                     <div className='flex justify-center items-center ml-1.5 px-4'>
                         <div className=' mr-2 mt-1'>
-                            <Image
-                                src={TimerIcon}
-                                alt='Timer Icon'
-                                width={30}
-                                height={30}
-                            />
+                        <svg xmlns="http://www.w3.org/2000/svg" className="text-red-600 ionicon" viewBox="0 0 512 512"><title>Time</title><path d="M256 64C150 64 64 150 64 256s86 192 192 192 192-86 192-192S362 64 256 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 128v144h96"/></svg>
+
                         </div>
                         <div className='flex flex-col ml-1.5 '>
                             <p className='font-semibold text-sm'>Opening Hours</p>
