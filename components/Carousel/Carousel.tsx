@@ -1,18 +1,21 @@
 import React from 'react'
-import useEmblaCarousel from 'embla-carousel-react'
+import EmblaCarousel, {
+  EmblaCarouselType,
+  EmblaOptionsType,
+  EmblaPluginType,
+  EmblaEventType,
+} from 'embla-carousel'
 
-const EmblaCarousel = () => {
-  const [emblaRef] = useEmblaCarousel()
 
-  return (
-    <div className="embla" ref={emblaRef}>
-      <div className="embla__container">
-        <div className="embla__slide">Slide 1</div>
-        <div className="embla__slide">Slide 2</div>
-        <div className="embla__slide">Slide 3</div>
-      </div>
-    </div>
-  )
+function setupEmblaButtons(embla: EmblaCarouselType): void {
+  // Setup buttons code here
 }
 
-export default EmblaCarousel
+const emblaNodes: HTMLElement[] = Array.from(
+  document.querySelectorAll('.embla'),
+)
+
+emblaNodes.forEach((emblaNode) => {
+  const embla = EmblaCarousel(emblaNode)
+  setupEmblaButtons(embla)
+})
