@@ -24,7 +24,7 @@ import TimerIcon from 'public/images/icons/header-timer.png';
 const TopHeader = () => {
     return (
         // main container
-        <div className='py-5'>
+        <div className='py-4'>
 
             {/* content container mx-auto */}
             <div className='container mx-auto flex justify-between px-4'>
@@ -35,7 +35,7 @@ const TopHeader = () => {
                         <Image
                             src={Logo}
                             alt='Logo'
-                            width={280}
+                            width={300}
                             height={80}
                         />
                     </a>
@@ -43,7 +43,7 @@ const TopHeader = () => {
                 {/* end logo */}
 
                 {/* phone and hours  */}
-                <div className='flex justify-center items-center mt-4 px-4'>
+                <div className='flex justify-center items-center px-4'>
 
                     {/* call us now */}
                     <div className='flex justify-center items-center px-4 border-slate-400 border-r'>
@@ -59,7 +59,7 @@ const TopHeader = () => {
 
                         <div className='flex flex-col ml-1.5 '>
                             <p className=' font-semibold text-sm'>Call Us Now</p>
-                            <p className=' font-light text-sm'>+1 (818) 645 7172</p>
+                            <p className=' font-normal text-sm'>+1 (818) 645 7172</p>
                             <p className=' font-semibold text-sm'>Hablamos Espanol!</p>
                         </div>
                     </div>
@@ -75,9 +75,9 @@ const TopHeader = () => {
                                 height={30}
                             />
                         </div>
-                        <div className='flex flex-col justify-center items-center '>
+                        <div className='flex flex-col ml-1.5 '>
                             <p className='font-semibold text-sm'>Opening Hours</p>
-                            <p className='font-thin text-sm'>Mon - Fri 8:00 - 5:00</p>
+                            <p className=' font-normal text-sm'>Mon - Fri 8:00 - 5:00</p>
                         </div>
                     </div>
                     {/* end hours */}
