@@ -1,5 +1,5 @@
 import React from 'react';
-import BottomHeader from './BottomHeader';
+import Nav from './BottomHeader';
 import TopHeader from './TopHeader';
 
 // notes: Header is a container for TopHeader and BottomHeader
@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header className='flex flex-col min-w-full'>
       <TopHeader />
-      <BottomHeader />
+      <Nav />
     </header>
   );
 }

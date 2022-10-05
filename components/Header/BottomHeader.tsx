@@ -1,46 +1,29 @@
 import React from "react";
-import Image from "next/image";
-import Logo from "public/images/Logo.png";
+import { useState } from "react";
+import { Squash as Hamburger, Squash } from 'hamburger-react'
 
 const BottomHeader = () => {
+
+
+    const [isOpen, setOpen] = useState(false)
+    
+    // variables that will contain the style for the nav menu
+    
+
     return (
         // main container
-        <div className='bg-primary'>
+        <div className='bg-gray-700'>
             {/* content container */}
-            <div className='container mx-auto px-4'>
+            <div className='container mx-auto px-4 transition-all'>
                 {/* inner content container */}
                 <div className="flex items-center justify-between">
 
-                    {/* nav link container */}
-                    <nav>
-                        <ul className='flex justify-center items-center py-4 text-white'>
-                            <li className='px-4'>
-                                <a href='/'>Home</a>
-                            </li>
-                            <li className='px-4'>
-                                <a href='/'>About</a>
-                            </li>
-                            <li className='px-4'>
-                                <a href='/'>Services</a>
-                            </li>
-                            <li className='px-4'>
-                                <a href='/'>Gallery</a>
-                            </li>
-                            <li className='px-4'>
-                                <a href='/'>Blog</a>
-                            </li>
-                            <li className='px-4'>
-                                <a href='/'>FAQ</a>
-                            </li>
-                            <li className='px-4'>
-                                <a href='/'>Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    {/* end nav link container */}
+                    
+
+                    
 
                     {/* social media container */}
-                    <div className="">
+                    <div className=" order-none md:order-last">
                         <ul className='py-3 flex justify-center items-center text-white'>
                             <li className='px-2'>
                                 <button className="bg-[#4285F4] p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
@@ -61,6 +44,37 @@ const BottomHeader = () => {
                         </ul>
                     </div>
                     {/* end social media container */}
+                    <div className="md:hidden">
+                    <Squash color="#FFF" label="Show menu" 
+                    toggled={isOpen} toggle={setOpen} />
+                    </div>
+                    {/* nav link container */}
+                    <nav className="hidden md:block">
+                        <ul className='flex justify-center items-center text-white transition-colors '>
+                            <li className='p-4 hover:bg-red-600 transition-colors'>
+                                <a href='/'>Home</a>
+                            </li>
+                            <li className='p-4 hover:bg-red-600 transition-colors'>
+                                <a href='/'>About</a>
+                            </li>
+                            <li className='p-4 hover:bg-red-600 transition-colors'>
+                                <a href='/'>Services</a>
+                            </li>
+                            <li className='p-4 hover:bg-red-600 transition-colors' >
+                                <a href='/'>Gallery</a>
+                            </li>
+                            <li className='p-4 hover:bg-red-600 transition-colors'>
+                                <a href='/'>Blog</a>
+                            </li>
+                            <li className='p-4 hover:bg-red-600 transition-colors'>
+                                <a href='/'>FAQ</a>
+                            </li>
+                            <li className='p-4 hover:bg-red-600 transition-colors'>
+                                <a href='/'>Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    {/* end nav link container */}
 
                 </div>
                 {/* end inner content container */}

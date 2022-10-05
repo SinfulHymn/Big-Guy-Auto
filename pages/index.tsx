@@ -8,7 +8,6 @@ import Carousel from '@components/Carousel/Carousel'
 const Home: NextPage = () => {
   return (
     <Layout>
-      <Carousel/>
     </Layout>
   )
 }
