@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from './BottomHeader';
+import Nav from './Nav';
 import TopHeader from './TopHeader';
 
 // notes: Header is a container for TopHeader and BottomHeader
