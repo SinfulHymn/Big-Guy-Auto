@@ -15,11 +15,16 @@ module.exports = {
         'accent-focus': '#FF00C0',
         'accent-active': '#FF00E0',
         'accent-disabled': '#FF00FF',
+        'carousel-title1': 'rgba(54,64,75,0.85)',
       },
       fontFamily:{
         'body': ['"Open Sans"', 'sans-serif'],
       },
     },
+    fluidTypography: {},
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-animate"),
+    require("tailwind-fluid-typography"),
+  ],
 }

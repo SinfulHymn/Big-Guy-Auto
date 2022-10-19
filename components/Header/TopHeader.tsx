@@ -7,14 +7,14 @@ import TimerIcon from 'public/images/icons/header-timer.png';
 const TopHeader = () => {
     return (
         // main container
-        <div className='py-3'>
+        <div className='py-1 sm:py-3'>
 
             {/* content container mx-auto */}
             <div className='container mx-auto flex flex-col justify-between items-center px-4 transition-all lg:flex-row'>
 
                 {/* logo */}
 
-                <a href="/">
+                <a className='max-h-[80px]' href="/">
                     <Image
                         src={Logo}
                         alt='Logo'

@@ -7,8 +7,8 @@ const TopFooter = () => {
         <div className="bg-primary-dark-grey pt-8 pb-2 transition-all">
 
             <div className="mx-auto flex container flex-col text-slate-200 md:flex-row">
-                <div className="flex-1 px-4 mb-6">
-                    <h1 className="mb-6 font-semibold text-xl">Contact Us</h1>
+                <div className="flex-1 px-4 mb-3 sm:mb-6">
+                    <h1 className="mb-3 sm:mb-6font-semibold text-xl">Contact Us</h1>
                     <ul className="text-sm">
                         <li className="my-3">
                             Email <span className="text-primary-bright-red pl-2">support@bigguyauto.com</span>
@@ -24,8 +24,8 @@ const TopFooter = () => {
 
 
                 </div>
-                <div className="flex-1 px-4 mb-6">
-                    <h1 className="mb-6 font-semibold text-xl">Our Services</h1>
+                <div className="flex-1 px-4 mb-3 sm:mb-6">
+                    <h1 className="mb-3 sm:mb-6 font-semibold text-xl">Our Services</h1>
                     <ul>
                         <TopFooterItem text="Auto Body Repair" />
                         <TopFooterItem text="Auto Glass Repair" />
@@ -37,8 +37,8 @@ const TopFooter = () => {
 
 
                 </div>
-                <div className="flex-1 px-4 mb-6">
-                    <h1 className="mb-6 font-semibold text-xl">Our Support</h1>
+                <div className="basis-1/2 sm:flex-1 px-4 mb-3 sm:mb-6">
+                    <h1 className="mb-3 sm:mb-6 font-semibold text-xl">Our Support</h1>
                     <ul>
                         <TopFooterItem text="Auto Body Repair" />
                         <TopFooterItem text="Auto Glass Repair" />
@@ -48,8 +48,8 @@ const TopFooter = () => {
                     </ul>
 
                 </div>
-                <div className="flex-1 px-4 mb-6">
-                    <h1 className="mb-6 font-semibold text-xl">Quick Contact</h1>
+                <div className="flex-1 px-4 mb-3 sm:mb-6">
+                    <h1 className="mb-3 sm:mb-6 font-semibold text-xl">Quick Contact</h1>
                     <ul>
                     <TopFooterItem text="Auto Body Repair" />
                     <TopFooterItem text="Auto Glass Repair" />

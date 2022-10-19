@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper-pagination-progressbar-fill{
+    background-color: #fb4848 !important;
+}
+
+.swiper-button-prev{
+    padding:3rem 2rem  !important;
+    background-color: rgba(54,64,75,0.85);
+    color: #fb4848 !important;
+}
+
+.swiper-button-next{
+    padding:3rem 2rem !important;
+    background-color: rgba(54,64,75,0.85);
+    color: #fb4848 !important;
+}
