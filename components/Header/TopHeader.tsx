@@ -29,7 +29,7 @@ const TopHeader = () => {
                 <div className='flex flex-col items-center h-full w-3/4 md:w-auto md:flex-row md:justify-evenly lg:justify-center'>
 
                     {/* call us now */}
-                    <div className='flex w-full justify-center border-slate-400 items-center px-4 pb-3 md:pb-0 border-b md:border-r md:border-b-0'>
+                    <div className='flex w-full justify-center border-main-green items-center px-4 pb-3 md:pb-0 border-b md:border-r md:border-b-0'>
                         <div className=' mr-2 mt-1'>
 
                             <Image

@@ -8,7 +8,7 @@ const BottomHeader = () => {
 
     return (
         // main container
-        <div className='bg-primary-dark-grey'>
+        <div className='bg-main'>
             {/* content container */}
             <div className='container mx-auto px-4 transition-all'>
                 {/* inner content container */}

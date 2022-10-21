@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'main': '#0A1110',
         'primary-dark-grey': '#36404B',
         'secondary-dark-grey': '#2C343D',
         'primary-bright-red': '#FB4848',
@@ -16,6 +17,7 @@ module.exports = {
         'accent-active': '#FF00E0',
         'accent-disabled': '#FF00FF',
         'carousel-title1': 'rgba(54,64,75,0.85)',
+        'main-green': '#344E41',
       },
       fontFamily:{
         'body': ['"Open Sans"', 'sans-serif'],
