@@ -9,7 +9,7 @@ const slides = Array.from(Array(SLIDE_COUNT).keys());
 const Home: NextPage = () => {
   return (
     <Layout>
-      <Carousel slides={slides}/>
+      <Carousel />
       <div className='pt-4 pb-1'>
         <div className='container mx-auto'>
           <div className='flex'>
