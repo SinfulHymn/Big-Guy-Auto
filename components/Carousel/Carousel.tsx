@@ -49,7 +49,7 @@ const Carousel = () => {
                                 </span>
 
                             </div>
-                            <div className=" bg-opacity-80 font-light text-[#fb4848] p-4 bg-[#ffffff] my-5 whitespace-nowrap fluid-base sm:fluid-3xl">
+                            <div className=" bg-opacity-80 font-light text-main-red p-4 bg-[#ffffff] my-5 whitespace-nowrap fluid-base sm:fluid-3xl">
                                 San Fernando Auto Repair
                             </div>
 

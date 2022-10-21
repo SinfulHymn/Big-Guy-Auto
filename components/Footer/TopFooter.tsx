@@ -11,14 +11,14 @@ const TopFooter = () => {
                     <h1 className="mb-3 sm:mb-6font-semibold text-xl">Contact Us</h1>
                     <ul className="text-sm">
                         <li className="my-3">
-                            Email <span className="text-primary-bright-red pl-2">support@bigguyauto.com</span>
+                            Email <span className="text-main-red pl-2">support@bigguyauto.com</span>
                         </li>
 
                         <li className="my-3">
-                            Phone <span className="text-primary-bright-red pl-2">+1 (818) 365 8018</span>
+                            Phone <span className="text-main-red pl-2">+1 (818) 365 8018</span>
                         </li>
                         <li className="my-3">
-                            Address <span className="text-primary-bright-red pl-2">1517 Truman St, San Fernando, CA 91340</span>
+                            Address <span className="text-main-red pl-2">1517 Truman St, San Fernando, CA 91340</span>
                         </li>
                     </ul>
 

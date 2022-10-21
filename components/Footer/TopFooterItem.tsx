@@ -8,7 +8,7 @@ type Props = {
 const BottomFooterItem: FC<Props> = ({ text }) => {
     return (
         <li className="mb-1.5 ">
-            <a href="#" className="flex items-center text-sm text-slate-200 hover:text-red-500 transition-all my-3"><AiFillRightCircle className=" inline-block mx-1 text-primary-bright-red" />{text}</a>
+            <a href="#" className="flex items-center text-sm text-slate-200 hover:text-red-500 transition-all my-3"><AiFillRightCircle className=" inline-block mx-1 text-main-red" />{text}</a>
         </li>
     )
 }

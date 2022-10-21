@@ -2,8 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    @font-face{
+        font-family: Germinale;
+        src: url('/fonts/germinale/Germinale-Regular.otf') format('opentype');
+        font-weight: 400;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: Fragment;
+        src: url('/fonts/fragment_mono/fonts/otf/FragmentMono-Regular.otf') format('opentype'),
+          
+    }
+    @font-face{
+        font-family: Plasto;
+        src: url('/fonts/plasto/PlastoTrial-Regular.otf') format('opentype');
+    }
+    
+    
+}
+
+body{
+    background-color: theme('colors.main-background');
+}
+
+
 .swiper-pagination-progressbar-fill{
-    background-color: #fb4848 !important;
+    background-color: theme('colors.main-red') !important;
+}
+.swiper-button-next{
+    color: theme('colors.main-red') !important;
 }
 
 .swiper-button-prev{

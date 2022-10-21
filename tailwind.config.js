@@ -8,7 +8,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'main': '#0A1110',
+        'main': '#141F2A',
+        'main-dark': '#101821',
+        'main-red': '#e71d36',
+        'main-background': '#EEF0EB',
+        'main-header': '#537A5A  ',
         'primary-dark-grey': '#36404B',
         'secondary-dark-grey': '#2C343D',
         'primary-bright-red': '#FB4848',
@@ -20,7 +24,7 @@ module.exports = {
         'main-green': '#344E41',
       },
       fontFamily:{
-        'body': ['"Open Sans"', 'sans-serif'],
+        'sans': [ '"Noto Sans"', 'sans-serif' ],
       },
     },
     fluidTypography: {},
