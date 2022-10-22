@@ -10,16 +10,26 @@ const AddressHeader = () => {
 
                 
                 <div className="py-2 flex justify-center items-center">
-                    <AiFillEnvironment className="inline-block mr-2 text-red-500 text-lg flex-initial " /> <span className="hover:text-main-red">
+                    <a href="" className="py-2 flex justify-center items-center">
+
+                    <AiFillEnvironment className="inline-block mr-2 text-main-red text-xl flex-initial " /> <span className="hover:text-main-red">
                         1517 Truman St, San Fernando, CA 91340
                         </span> 
+                    </a>
 
                 </div>
 
                 <div className=" flex justify-center items-center">
-                    <AiFillGoogleSquare className="inline-block mx-2 text-red-500 text-4xl flex-initial rounded-3xl" /> 
-                    <AiFillTwitterSquare className="inline-block mx-2 text-red-500 text-4xl flex-initial rounded-3xl"/>
-                    <AiFillFacebook className="inline-block mx-2 text-red-500 text-4xl flex-initial rounded-3xl"/>
+                    <a href="">
+                    <AiFillGoogleSquare className="inline-block mx-2 text-main-red text-4xl flex-initial rounded-3xl" /> 
+                    </a>
+                    <a href="">
+                    <AiFillTwitterSquare className="inline-block mx-2 text-main-red text-4xl flex-initial rounded-3xl" /> 
+                    </a>
+                    <a href="">
+                    <AiFillFacebook className="inline-block mx-2 text-main-red text-4xl flex-initial rounded-3xl" /> 
+                    </a>
+                    
                 </div>
 
                 </div>

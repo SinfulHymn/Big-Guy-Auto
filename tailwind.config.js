@@ -8,11 +8,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'main': '#141F2A',
-        'main-dark': '#101821',
-        'main-red': '#e71d36',
+        'main': '#0e1e2D',
+        'main-dark': '#0c1825',
+        'main-red': '#CE2D4F',
         'main-background': '#EEF0EB',
-        'main-header': '#537A5A  ',
+        'main-header': '#F5F5F5',
         'primary-dark-grey': '#36404B',
         'secondary-dark-grey': '#2C343D',
         'primary-bright-red': '#FB4848',
@@ -20,7 +20,7 @@ module.exports = {
         'accent-focus': '#FF00C0',
         'accent-active': '#FF00E0',
         'accent-disabled': '#FF00FF',
-        'carousel-title1': 'rgba(54,64,75,0.85)',
+        'carousel-title1': 'rgba(14, 30, 45, .75)',
         'main-green': '#344E41',
       },
       fontFamily:{

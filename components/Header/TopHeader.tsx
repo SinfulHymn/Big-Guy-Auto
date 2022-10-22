@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Logo from 'public/images/logo.png';
 import PhoneIcon from 'public/images/icons/header-phone.png';
 import TimerIcon from 'public/images/icons/header-timer.png';
+import {AiFillPhone,AiFillClockCircle} from 'react-icons/ai';
 
 const TopHeader = () => {
     return (
@@ -32,17 +33,12 @@ const TopHeader = () => {
                     <div className='flex w-full justify-center border-main-green items-center px-4 pb-3 md:pb-0 border-b md:border-r md:border-b-0'>
                         <div className=' mr-2 mt-1'>
 
-                            <Image
-                                src={PhoneIcon}
-                                alt='PhoneIcon'
-                                width={30}
-                                height={30}
-                            />
+                        <AiFillPhone className='rotate-90 text-main-red text-3xl'/>
                         </div>
 
                         <div className='flex flex-col ml-1.5 w-36'>
                             <p className=' font-semibold text-sm'>Call Us Now</p>
-                            <p className=' font-normal text-sm'>+1 (818) 645 7172</p>
+                            <p className=' font-medium text-sm'>+1 (818) 645 7172</p>
                             <p className=' font-semibold text-sm'>Hablamos Espanol!</p>
                         </div>
                     </div>
@@ -51,17 +47,12 @@ const TopHeader = () => {
                     {/* hours */}
                     <div className='flex w-full justify-center items-center px-4 py-3 md:py-0'>
                         <div className='mr-2 mt-1'>
-                            <Image
-                                src={TimerIcon}
-                                alt='TimerIcon'
-                                width={27}
-                                height={30}
-                            />
+                        <AiFillClockCircle className='text-main-red text-3xl'/>
 
                         </div>
                         <div className='flex flex-col ml-1.5 w-36'>
                             <p className='font-semibold text-sm'>Opening Hours</p>
-                            <p className='font-normal text-sm'>Mon - Fri 8:00 - 5:00</p>
+                            <p className='font-medium text-sm'>Mon - Fri 8:00 - 5:00</p>
                         </div>
                     </div>
                     {/* end hours */}

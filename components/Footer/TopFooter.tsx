@@ -8,8 +8,8 @@ const TopFooter = () => {
 
             <div className="mx-auto flex container flex-col text-slate-200 md:flex-row">
                 <div className="flex-1 px-4 mb-3 sm:mb-6">
-                    <h1 className="mb-3 sm:mb-6font-semibold text-xl">Contact Us</h1>
-                    <ul className="text-sm">
+                    <h1 className="mb-3 sm:mb-6 font-semibold text-xl">Contact Us</h1>
+                    <ul className="text-sm font-medium">
                         <li className="my-3">
                             Email <span className="text-main-red pl-2">support@bigguyauto.com</span>
                         </li>
