@@ -4,7 +4,7 @@ import TopFooterItem from "./TopFooterItem";
 
 const TopFooter = () => {
     return (
-        <div className="bg-main pt-8 pb-2 transition-all">
+        <div className="bg-main mt-2 pt-6 pb-2 transition-all">
 
             <div className="mx-auto flex container flex-col text-slate-200 md:flex-row">
                 <div className="flex-1 px-4 mb-3 sm:mb-6">

@@ -8,7 +8,7 @@ import {AiFillPhone,AiFillClockCircle} from 'react-icons/ai';
 const TopHeader = () => {
     return (
         // main container
-        <div className='py-1 sm:py-3'>
+        <div className='py-0 xs:py-1 sm:py-3'>
 
             {/* content container mx-auto */}
             <div className='container mx-auto flex flex-col justify-between items-center px-4 transition-all lg:flex-row'>

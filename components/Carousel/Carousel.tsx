@@ -15,7 +15,7 @@ const Carousel = () => {
     return (
 
             <Swiper
-                className="relative w-full max-h-[540px] h-full"
+                className="relative w-full max-h-[300px] sm:max-h-[400px] h-full"
                 // effect={"fade"}
                 spaceBetween={0}
                 centeredSlides={true}
