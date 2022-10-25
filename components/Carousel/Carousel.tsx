@@ -15,7 +15,7 @@ const Carousel = () => {
     return (
 
             <Swiper
-                className="relative w-full max-h-[280px] sm:max-h-[400px] h-full"
+                className="relative w-full max-h-[350px] sm:max-h-[500px] h-full"
                 // effect={"fade"}
                 spaceBetween={0}
                 centeredSlides={true}
@@ -49,7 +49,7 @@ const Carousel = () => {
                                 </span>
 
                             </div>
-                            <div className=" bg-opacity-80 font-light text-main-red p-4 bg-[#ffffff] my-5 whitespace-nowrap fluid-base sm:fluid-3xl">
+                            <div className=" bg-opacity-80 font-light text-main-red p-4 bg-carousel-title2 my-5 whitespace-nowrap fluid-base sm:fluid-3xl">
                                 San Fernando Auto Repair
                             </div>
 

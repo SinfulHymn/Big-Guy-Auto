@@ -37,9 +37,9 @@ const TopHeader = () => {
                         </div>
 
                         <div className='flex flex-col ml-1.5 w-36'>
-                            <p className=' font-medium text-sm'>Call Us Now</p>
+                            <p className=' font-semibold text-sm'>Call Us Now</p>
                             <p className=' font-medium text-sm'>+1 (818) 645 7172</p>
-                            <p className=' font-medium text-sm'>Hablamos Espanol!</p>
+                            <p className=' font-semibold text-sm'>Hablamos Espanol!</p>
                         </div>
                     </div>
                     {/* end call us now */}
@@ -51,7 +51,7 @@ const TopHeader = () => {
 
                         </div>
                         <div className='flex flex-col ml-1.5 w-36'>
-                            <p className='font-medium text-sm'>Opening Hours</p>
+                            <p className='font-semibold text-sm'>Opening Hours</p>
                             <p className='font-medium text-sm'>Mon - Fri 8:00 - 5:00</p>
                         </div>
                     </div>
