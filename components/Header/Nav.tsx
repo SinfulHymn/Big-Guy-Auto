@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Squash as Hamburger, Squash } from 'hamburger-react'
+import Link from "next/link";
 
 const BottomHeader = () => {
     const [isOpen, setOpen] = useState(false)
@@ -32,25 +33,25 @@ const BottomHeader = () => {
                     <nav className={"w-full md:w-auto md:block z-50 " + (isOpen  ? 'block' : 'hidden')}>
                         <ul className='flex flex-col transition-colors mt-4 pb-4z text-main-background md:flex-row  md:pb-0 md:mt-0'>
                             <li>
-                                <a className=' border-b block  p-3 sm:p-4 hover:bg-main-red  transition-colors md:border-0' href='/'>Home</a>
+                                <Link className=' border-b block  p-3 sm:p-4 hover:bg-main-red  transition-colors md:border-0' href='/'>Home</Link>
                             </li>
                             <li>
-                                <a className='border-b block   p-3  sm:p-4 hover:bg-main-red  transition-colors md:border-0' href='/'>About</a>
+                                <Link className='border-b block   p-3  sm:p-4 hover:bg-main-red  transition-colors md:border-0' href='/'>About</Link>
                             </li>
                             <li>
-                                <a  className='border-b block  p-3 sm:p-4 hover:bg-main-red transition-colors md:border-0' href='/'>Services</a>
+                                <Link  className='border-b block  p-3 sm:p-4 hover:bg-main-red transition-colors md:border-0' href='/'>Services</Link>
                             </li>
                             <li>
-                                <a className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0' href='/'>Gallery</a>
+                                <Link className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0' href='/'>Gallery</Link>
                             </li>
                             <li>
-                                <a className='border-b block  p-3 sm:p-4 hover:bg-main-red transition-colors md:border-0' href='/'>Blog</a>
+                                <Link className='border-b block  p-3 sm:p-4 hover:bg-main-red transition-colors md:border-0' href='/'>Blog</Link>
                             </li>
                             <li>
-                                <a className='border-b block p-3 sm:p-4 hover:bg-main-red transition-colors md:border-0' href='/'>FAQ</a>
+                                <Link className='border-b block p-3 sm:p-4 hover:bg-main-red transition-colors md:border-0' href='/'>FAQ</Link>
                             </li>
                             <li>
-                                <a className=' border-b block p-3 sm:p-4 hover:bg-main-red transition-colors md:border-0' href='/'>Contact</a>
+                                <Link className=' border-b block p-3 sm:p-4 hover:bg-main-red transition-colors md:border-0' href='/'>Contact</Link>
                             </li>
                         </ul>
                     </nav>
