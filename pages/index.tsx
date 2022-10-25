@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import Layout from '@components/Layout'
 import Carousel from '@components/Carousel/Carousel'
-import {GoTools} from 'react-icons/go'
 import Index from '@components/Index/Index'
 
 

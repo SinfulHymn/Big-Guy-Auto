@@ -1,9 +1,8 @@
 import React from 'react'
 import Image from 'next/image';
 import Logo from 'public/images/logo.png';
-import PhoneIcon from 'public/images/icons/header-phone.png';
-import TimerIcon from 'public/images/icons/header-timer.png';
 import {AiFillPhone,AiFillClockCircle} from 'react-icons/ai';
+import Link from 'next/link';
 
 const TopHeader = () => {
     return (
@@ -15,14 +14,17 @@ const TopHeader = () => {
 
                 {/* logo */}
 
-                <a className='max-h-[80px]' href="/">
+                <Link className='max-h-[80px]' href="/">
+                    <a className='max-h-[80px]'>
+
                     <Image
                         src={Logo}
                         alt='Logo'
                         width={300}
                         height={80}
                     />
-                </a>
+                    </a>
+                </Link>
 
                 {/* end logo */}
 

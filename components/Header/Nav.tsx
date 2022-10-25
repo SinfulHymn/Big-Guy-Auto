@@ -1,6 +1,6 @@
 import React from "react";
-import { useState, useEffect } from "react";
-import { Squash as Hamburger, Squash } from 'hamburger-react'
+import { useState } from "react";
+import { Squash as Squash } from 'hamburger-react'
 import Link from "next/link";
 
 const BottomHeader = () => {

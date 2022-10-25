@@ -1,5 +1,4 @@
 import React from "react";
-import { AiFillRightCircle } from 'react-icons/ai';
 import TopFooterItem from "./TopFooterItem";
 
 const TopFooter = () => {
