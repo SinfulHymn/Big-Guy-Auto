@@ -33,25 +33,25 @@ const BottomHeader = () => {
                     <nav className={"w-full md:w-auto md:block z-50 " + (isOpen  ? 'block' : 'hidden')}>
                         <ul className='flex flex-col transition-colors mt-4 pb-4z text-main-background md:flex-row  md:pb-0 md:mt-0'>
                             <li>
-                                <Link className=' border-b block  p-3 sm:p-4 hover:bg-main-red  transition-colors md:border-0' href='/'>Home</Link>
+                                <Link className=' border-b block  p-3 sm:p-4 hover:bg-main-red  transition-colors md:border-0' href='/'><a>Home</a></Link>
                             </li>
                             <li>
-                                <Link className='border-b block   p-3  sm:p-4 hover:bg-main-red  transition-colors md:border-0' href='/'>About</Link>
+                                <Link className='border-b block   p-3  sm:p-4 hover:bg-main-red  transition-colors md:border-0' href='/'><a>Home</a></Link>
                             </li>
                             <li>
-                                <Link  className='border-b block  p-3 sm:p-4 hover:bg-main-red transition-colors md:border-0' href='/'>Services</Link>
+                                <Link  className='border-b block  p-3 sm:p-4 hover:bg-main-red transition-colors md:border-0' href='/'><a>Home</a></Link>
                             </li>
                             <li>
-                                <Link className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0' href='/'>Gallery</Link>
+                                <Link  href='/'><a className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>Home</a></Link>
                             </li>
                             <li>
-                                <Link className='border-b block  p-3 sm:p-4 hover:bg-main-red transition-colors md:border-0' href='/'>Blog</Link>
+                                <Link className='border-b block  p-3 sm:p-4 hover:bg-main-red transition-colors md:border-0' href='/'><a>Home</a></Link>
                             </li>
                             <li>
-                                <Link className='border-b block p-3 sm:p-4 hover:bg-main-red transition-colors md:border-0' href='/'>FAQ</Link>
+                                <Link className='border-b block p-3 sm:p-4 hover:bg-main-red transition-colors md:border-0' href='/'><a>Home</a></Link>
                             </li>
                             <li>
-                                <Link className=' border-b block p-3 sm:p-4 hover:bg-main-red transition-colors md:border-0' href='/'>Contact</Link>
+                                <Link className=' border-b block p-3 sm:p-4 hover:bg-main-red transition-colors md:border-0' href='/'><a>Home</a></Link>
                             </li>
                         </ul>
                     </nav>

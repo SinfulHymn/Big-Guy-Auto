@@ -13,23 +13,30 @@ const AddressHeader = () => {
 
                     <div className="flex flex-1 justify-start items-center">
                         <Link href="" className="py-2 flex justify-center items-center">
-
+                            <a >
                             <IoLocation className="inline-block mr-2 text-main-red text-3xl sm:text-xl flex-initial " /> <span className="hover:text-main-red text-xs sm:text-sm">
                                 1517 Truman St, San Fernando, CA 91340
                             </span>
+                            </a>
                         </Link>
 
                     </div>
 
                     <div className=" flex flex-1 justify-end items-center">
-                        <Link href="">
-                            <AiFillGoogleSquare className="inline-block mx-2 text-main-red text-4xl flex-initial rounded-3xl" />
+                        <Link href="/">
+                            <a>
+                                <AiFillGoogleSquare className="inline-block mx-2 text-main-red text-4xl flex-initial rounded-3xl" />
+                            </a>
                         </Link>
                         <Link href="">
+                            <a >
                             <FaYelp className="inline-block mx-2 text-main-red text-3xl flex-initial rounded-3xl" />
+                            </a>
                         </Link>
                         <Link href="">
+                            <a>
                             <AiFillFacebook className="inline-block mx-2 text-main-red text-4xl flex-initial rounded-3xl" />
+                            </a>
                         </Link>
 
                     </div>
