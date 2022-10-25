@@ -30,28 +30,56 @@ const BottomHeader = () => {
                     {/* end hamburger menu */}
 
                     {/* nav link container */}
-                    <nav className={"w-full md:w-auto md:block z-50 " + (isOpen  ? 'block' : 'hidden')}>
+                    <nav className={"w-full md:w-auto md:block z-50 " + (isOpen ? 'block' : 'hidden')}>
                         <ul className='flex flex-col transition-colors mt-4 pb-4z text-main-background md:flex-row  md:pb-0 md:mt-0'>
                             <li>
-                                <Link className=' border-b block  p-3 sm:p-4 hover:bg-main-red  transition-colors md:border-0' href='/'><a>Home</a></Link>
+                                <Link href='/'>
+                                    <a className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>
+                                        Home
+                                    </a>
+                                </Link>
                             </li>
                             <li>
-                                <Link className='border-b block   p-3  sm:p-4 hover:bg-main-red  transition-colors md:border-0' href='/'><a>Home</a></Link>
+                                <Link href='/'>
+                                    <a className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>
+                                        About
+                                    </a>
+                                </Link>
                             </li>
                             <li>
-                                <Link  className='border-b block  p-3 sm:p-4 hover:bg-main-red transition-colors md:border-0' href='/'><a>Home</a></Link>
+                                <Link href='/'>
+                                    <a className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>
+                                        Gallery
+                                    </a>
+                                </Link>
                             </li>
                             <li>
-                                <Link  href='/'><a className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>Home</a></Link>
+                                <Link href='/'>
+                                    <a className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>
+                                        Blog
+                                    </a>
+                                </Link>
                             </li>
                             <li>
-                                <Link className='border-b block  p-3 sm:p-4 hover:bg-main-red transition-colors md:border-0' href='/'><a>Home</a></Link>
+                                <Link href='/'>
+                                    <a className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>
+                                        FAQ
+                                    </a>
+                                </Link>
                             </li>
                             <li>
-                                <Link className='border-b block p-3 sm:p-4 hover:bg-main-red transition-colors md:border-0' href='/'><a>Home</a></Link>
+                                <Link href='/'>
+                                    <a className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>
+                                        Contact
+                                    </a>
+                                </Link>
                             </li>
                             <li>
-                                <Link className=' border-b block p-3 sm:p-4 hover:bg-main-red transition-colors md:border-0' href='/'><a>Home</a></Link>
+                                <Link href='/'>
+                                    <a className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>
+                                        Home
+                                    </a>
+                                </Link>
                             </li>
                         </ul>
                     </nav>

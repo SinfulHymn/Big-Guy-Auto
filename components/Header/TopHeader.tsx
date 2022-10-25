@@ -38,7 +38,7 @@ const TopHeader = () => {
                         <AiFillPhone className='rotate-90 text-main-red text-3xl'/>
                         </div>
 
-                        <div className='flex flex-col ml-1.5 w-36 text-xs font- sm:text-sm '>
+                        <div className='flex flex-col ml-1.5 w-36 text-xs sm:text-sm items-center'>
                             <p>Call Us Now</p>
                             <p>+1 (818) 645 7172</p>
                             <p>Hablamos Espanol!</p>
@@ -52,7 +52,7 @@ const TopHeader = () => {
                         <AiFillClockCircle className='text-main-red text-3xl'/>
 
                         </div>
-                        <div className='flex flex-col ml-1.5 w-36 text-xs sm:text-sm'>
+                        <div className='flex flex-col ml-1.5 w-36 text-xs sm:text-sm items-center'>
                             <p>Opening Hours</p>
                             <p>Mon - Fri 8:00 - 5:00</p>
                         </div>
