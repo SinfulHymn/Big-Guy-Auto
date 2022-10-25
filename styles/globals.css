@@ -30,15 +30,18 @@ body{
 .swiper-pagination-progressbar-fill{
     background-color: theme('colors.main-red') !important;
 }
+.swiper-button-disabled{
+    color: theme('colors.main-red') !important;
+}
 .swiper-button-next{
     color: theme('colors.main-red') !important;
 }
-
 .swiper-button-prev{
-
-    
-    
+    color: theme('colors.main-red') !important;
 }
+    
+    
+
 
 @media screen and (max-width: 768px) {
     .swiper-button-next{
@@ -52,7 +55,3 @@ body{
 
 
 
-.swiper-button-next{
-    
-    
-}
