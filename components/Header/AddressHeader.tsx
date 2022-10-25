@@ -12,7 +12,7 @@ const AddressHeader = () => {
 
 
                     <div className="flex flex-1 justify-start items-center">
-                        <Link href="">
+                        <Link href="https://goo.gl/maps/NDWdQpDaeGu8Q34E6">
                             <a className="py-2 flex justify-center items-center">
                                 <IoLocation className="inline-block mr-2 text-main-red text-3xl sm:text-xl " /> <p className="hover:text-main-red text-xs sm:text-sm inline">
                                     1517 Truman St, San Fernando, CA 91340
@@ -23,17 +23,17 @@ const AddressHeader = () => {
                     </div>
 
                     <div className=" flex flex-1 justify-end items-center">
-                        <Link href="/">
+                        <Link href="https://goo.gl/maps/NDWdQpDaeGu8Q34E6">
                             <a>
                                 <AiFillGoogleSquare className="inline-block mx-2 text-main-red text-4xl flex-initial rounded-3xl" />
                             </a>
                         </Link>
-                        <Link href="">
+                        <Link href="https://www.yelp.com/biz/big-guy-auto-body-san-fernando-2">
                             <a >
                                 <FaYelp className="inline-block mx-2 text-main-red text-3xl flex-initial rounded-3xl" />
                             </a>
                         </Link>
-                        <Link href="">
+                        <Link href="https://www.facebook.com/Big.Guy.Auto.Body.Repair">
                             <a>
                                 <AiFillFacebook className="inline-block mx-2 text-main-red text-4xl flex-initial rounded-3xl" />
                             </a>

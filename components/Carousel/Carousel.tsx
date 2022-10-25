@@ -2,7 +2,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation, EffectFade } from "swiper";
-import { length, imagesByIndex } from "./Media";
+import { length, imagesByIndex } from "../../public/Media";
 import Image from 'next/future/image';
 
 // Import Swiper styles

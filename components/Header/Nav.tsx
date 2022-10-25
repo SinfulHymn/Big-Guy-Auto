@@ -40,35 +40,35 @@ const BottomHeader = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href='/'>
+                                <Link href='/about'>
                                     <a className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>
                                         About
                                     </a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href='/'>
+                                <Link href='/gallery'>
                                     <a className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>
                                         Gallery
                                     </a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href='/'>
+                                <Link href='/blog'>
                                     <a className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>
                                         Blog
                                     </a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href='/'>
+                                <Link href='/FAQ'>
                                     <a className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>
                                         FAQ
                                     </a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href='/'>
+                                <Link href='/contact'>
                                     <a className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>
                                         Contact
                                     </a>
