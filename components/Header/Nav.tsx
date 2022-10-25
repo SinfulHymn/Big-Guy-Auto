@@ -30,8 +30,8 @@ const BottomHeader = () => {
                     {/* end hamburger menu */}
 
                     {/* nav link container */}
-                    <nav className={"w-full md:w-auto md:block z-50 " + (isOpen ? 'block' : 'hidden')}>
-                        <ul className='flex flex-col transition-colors mt-4 pb-4z text-main-background md:flex-row  md:pb-0 md:mt-0'>
+                    <nav className={"w-full md:w-auto md:block  " + (isOpen ? 'block' : 'hidden')}>
+                        <ul className='flex flex-col transition-colors mt-4 pb-4 text-main-background md:flex-row  md:pb-0 md:mt-0'>
                             <li>
                                 <Link href='/'>
                                     <a className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>

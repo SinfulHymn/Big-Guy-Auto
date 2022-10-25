@@ -3,7 +3,7 @@ import { GoTools } from "react-icons/go";
 
 const OurServices = () => {
     return (
-        <div className="mx-6">
+        <div className="mx-6 my-10">
             <div className=' border-b border-gray-400'>
                 <p className=' font-light text-xl py-4'>
                     Our Services

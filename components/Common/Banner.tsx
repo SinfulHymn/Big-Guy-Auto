@@ -10,18 +10,8 @@ type BannerProps = {
 
 const Banner = ({ image, title, subtitle }: BannerProps) => {
     return (
-        <div className=" w-full h-[300px]">
-
-            <div className="h-[400px] w-full">
-                <Image
-                    
-                    alt="big guy"
-                    src={image}
-                    fill
-                    
-                    quality={100}
-                />
-            </div>
+        <div>
+            {/* <Image src={image} alt={title} /> */}
         </div>
     );
 }
