@@ -27,32 +27,32 @@ const TopHeader = () => {
                 {/* end logo */}
 
                 {/* phone and hours  */}
-                <div className='flex flex-col items-center h-full w-3/4 md:w-auto md:flex-row md:justify-evenly lg:justify-center'>
+                <div className='flex flex-col items-center h-full w-full md:w-auto md:flex-row md:justify-evenly lg:justify-center'>
 
                     {/* call us now */}
-                    <div className='flex w-full justify-center border-main-green items-center px-4 pb-3 md:pb-0 border-b md:border-r md:border-b-0'>
+                    <div className='flex w-full justify-center border-main-green items-center px-4 pb-1  md:pb-0 border-b md:border-r md:border-b-0'>
                         <div className=' mr-2 mt-1'>
 
                         <AiFillPhone className='rotate-90 text-main-red text-3xl'/>
                         </div>
 
-                        <div className='flex flex-col ml-1.5 w-36'>
-                            <p className=' font-medium text-sm'>Call Us Now</p>
-                            <p className=' font-medium text-sm'>+1 (818) 645 7172</p>
-                            <p className=' font-medium text-sm'>Hablamos Espanol!</p>
+                        <div className='flex flex-col ml-1.5 w-36 text-xs font- sm:text-sm '>
+                            <p>Call Us Now</p>
+                            <p>+1 (818) 645 7172</p>
+                            <p>Hablamos Espanol!</p>
                         </div>
                     </div>
                     {/* end call us now */}
 
                     {/* hours */}
-                    <div className='flex w-full justify-center items-center px-4 py-3 md:py-0'>
+                    <div className='flex w-full justify-center items-center px-4 py-2 md:py-0'>
                         <div className='mr-2 mt-1'>
                         <AiFillClockCircle className='text-main-red text-3xl'/>
 
                         </div>
-                        <div className='flex flex-col ml-1.5 w-36'>
-                            <p className='font-medium text-sm'>Opening Hours</p>
-                            <p className='font-medium text-sm'>Mon - Fri 8:00 - 5:00</p>
+                        <div className='flex flex-col ml-1.5 w-36 text-xs sm:text-sm'>
+                            <p>Opening Hours</p>
+                            <p>Mon - Fri 8:00 - 5:00</p>
                         </div>
                     </div>
                     {/* end hours */}

@@ -1,5 +1,4 @@
 import React from "react";
-import { GoTools } from "react-icons/go";
 import Welcome from "./Welcome";
 import OurServices from "./OurServices";
 
