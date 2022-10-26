@@ -1,7 +1,7 @@
 
 <div id="top" align="center">
   <a href="https://github.com/Kmachappy/Runners-Page">
-    <img src="https://i.imgur.com/3iZvHeo.jpg" alt="Logo" width="80%" height="150">
+    <img src="https://i.imgur.com/3iZvHeo.jpg" alt="Logo" width="100%" height="150">
   </a>
   <a href="https://kmacshop.herokuapp.com/">
     <h3 align="center">KmacShop</h3>
