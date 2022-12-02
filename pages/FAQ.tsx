@@ -1,10 +1,10 @@
 import Layout from '@components/Layout';
+import FaqLayout from '@components/FAQ/faqLayout';
+
 export default function FAQ() {
   return (
     <Layout>
-      <div className="flex justify-center items-center h-full text-2xl sm:text-4xl">
-        UNDER CONSTRUCTION. PLEASE CHECK BACK SOON.
-      </div>
+      <FaqLayout />
     </Layout>
   );
 }

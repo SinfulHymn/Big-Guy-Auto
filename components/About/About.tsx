@@ -4,7 +4,7 @@ import Banner from '@components/Common/Banner';
 const About = () => {
   return (
     <>
-      <Banner title="ABOUT US" />
+      <Banner title="About Us" />
       <div className="py-5 sm:py-10 ">
         <div className="container mx-auto flex flex-col">
           <div className=" font-normal text-lg ">About Us</div>
