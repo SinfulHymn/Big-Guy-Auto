@@ -7,6 +7,7 @@ const Banner = ({ title }) => {
         src={'/images/banner.jpg'}
         alt="Banner Image"
         fill
+        sizes='100vw'
         className="absolute object-cover w-full h-full"
       ></Image>
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
