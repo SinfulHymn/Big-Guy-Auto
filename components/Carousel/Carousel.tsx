@@ -3,7 +3,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation, EffectFade } from "swiper";
 import { length, imagesByIndex } from "../../public/Media";
-import Image from 'next/future/image';
+import Image from "next/image";
 
 // Import Swiper styles
 import 'swiper/css';

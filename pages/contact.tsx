@@ -7,7 +7,7 @@ const Contact: NextPage = () => {
     const photo = imagesByIndex(1).src
   return (
     <Layout>
-        <Banner subtitle='test' title="Contact Us" image={`${photo}`} />
+        <Banner title="Contact Us"  />
     </Layout>
   )
 }

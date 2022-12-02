@@ -15,7 +15,7 @@ const TopHeader = () => {
                 {/* logo */}
 
                 <Link className='max-h-[80px]' href="/">
-                    <a className='max-h-[80px]'>
+                    <div className='max-h-[80px]'>
 
                     <Image
                         src={Logo}
@@ -23,7 +23,7 @@ const TopHeader = () => {
                         width={300}
                         height={80}
                     />
-                    </a>
+                    </div>
                 </Link>
 
                 {/* end logo */}

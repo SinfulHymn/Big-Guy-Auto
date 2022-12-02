@@ -13,30 +13,30 @@ const AddressHeader = () => {
 
                     <div className="flex flex-1 justify-start items-center">
                         <Link href="https://goo.gl/maps/NDWdQpDaeGu8Q34E6">
-                            <a className="py-2 flex justify-center items-center">
+                            <div className="py-2 flex justify-center items-center">
                                 <IoLocation className="inline-block mr-2 text-main-red text-3xl sm:text-xl " /> <p className="hover:text-main-red text-xs sm:text-sm inline">
                                     1517 Truman St, San Fernando, CA 91340
                                 </p>
-                            </a>
+                            </div>
                         </Link>
 
                     </div>
 
                     <div className=" flex flex-1 justify-end items-center">
                         <Link href="https://goo.gl/maps/NDWdQpDaeGu8Q34E6">
-                            <a>
+                            <div>
                                 <AiFillGoogleSquare className="inline-block mx-2 text-main-red text-4xl flex-initial rounded-3xl" />
-                            </a>
+                            </div>
                         </Link>
                         <Link href="https://www.yelp.com/biz/big-guy-auto-body-san-fernando-2">
-                            <a >
+                            <div>
                                 <FaYelp className="inline-block mx-2 text-main-red text-3xl flex-initial rounded-3xl" />
-                            </a>
+                            </div>
                         </Link>
                         <Link href="https://www.facebook.com/Big.Guy.Auto.Body.Repair">
-                            <a>
+                            <div>
                                 <AiFillFacebook className="inline-block mx-2 text-main-red text-4xl flex-initial rounded-3xl" />
-                            </a>
+                            </div>
                         </Link>
 
                     </div>

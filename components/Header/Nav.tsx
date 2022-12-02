@@ -34,53 +34,47 @@ const BottomHeader = () => {
                         <ul className='flex flex-col transition-colors mt-4 pb-4 text-main-background md:flex-row  md:pb-0 md:mt-0'>
                             <li>
                                 <Link href='/'>
-                                    <a className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>
+                                    <div className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>
                                         Home
-                                    </a>
+                                    </div>
                                 </Link>
                             </li>
                             <li>
                                 <Link href='/about'>
-                                    <a className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>
+                                    <div className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>
                                         About
-                                    </a>
+                                    </div>
                                 </Link>
                             </li>
                             <li>
                                 <Link href='/gallery'>
-                                    <a className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>
+                                    <div className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>
                                         Gallery
-                                    </a>
+                                    </div>
                                 </Link>
                             </li>
                             <li>
                                 <Link href='/blog'>
-                                    <a className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>
+                                    <div className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>
                                         Blog
-                                    </a>
+                                    </div>
                                 </Link>
                             </li>
                             <li>
                                 <Link href='/FAQ'>
-                                    <a className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>
+                                    <div className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>
                                         FAQ
-                                    </a>
+                                    </div>
                                 </Link>
                             </li>
                             <li>
                                 <Link href='/contact'>
-                                    <a className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>
+                                    <div className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>
                                         Contact
-                                    </a>
+                                    </div>
                                 </Link>
                             </li>
-                            <li>
-                                <Link href='/'>
-                                    <a className='border-b block  p-3  sm:p-4 hover:bg-main-red transition-colors md:border-0'>
-                                        Home
-                                    </a>
-                                </Link>
-                            </li>
+
                         </ul>
                     </nav>
                     {/* end nav link container */}
