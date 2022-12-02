@@ -1,13 +1,13 @@
 import React from "react";
 import Welcome from "./Welcome";
-import OurServices from "./OurServices";
+// import OurServices from "./OurServices";
 
 const Index = () => {
     return (
-        <div className='py-5 sm:py-10'>
+        <div className='py-5 sm:py-10 '>
             <div className='container mx-auto '>
                 <Welcome />
-                <OurServices />
+                {/* <OurServices /> */}
 
 
             </div>
