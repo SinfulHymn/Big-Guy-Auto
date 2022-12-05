@@ -37,7 +37,7 @@ export default function EmailComponent() {
                 type="text"
                 name="name"
                 id="name"
-                className="shadow-sm focus:ring-main-red focus:border-main-red block w-full sm:text-sm border-gray-300 rounded-sm h-[50px]"
+                className="p-4 shadow-sm focus:ring-main-red focus:border-main-red block w-full sm:text-sm border-gray-300 rounded-sm h-[50px]"
               />
             </div>
           </div>
@@ -57,7 +57,7 @@ export default function EmailComponent() {
                 type="email"
                 name="email"
                 id="email"
-                className="shadow-sm focus:ring-main-red focus:border-main-red block w-full sm:text-sm border-gray-300 rounded-sm h-[50px]"
+                className="p-4 shadow-sm focus:ring-main-red focus:border-main-red block w-full sm:text-sm border-gray-300 rounded-sm h-[50px]"
               />
             </div>
           </div>
@@ -76,7 +76,7 @@ export default function EmailComponent() {
                 type="text"
                 name="subject"
                 id="subject"
-                className="shadow-sm focus:ring-main-red focus:border-main-red block w-full sm:text-sm border-gray-300 rounded-sm h-[50px]"
+                className="p-4 shadow-sm focus:ring-main-red focus:border-main-red block w-full sm:text-sm border-gray-300 rounded-sm h-[50px]"
               />
             </div>
           </div>
