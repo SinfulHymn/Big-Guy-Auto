@@ -13,15 +13,21 @@ export default function EmailComponent() {
       [e.target.name]: e.target.value,
     });
   };
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(form);
+    fetch('/api/mail',{
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(form),
+    })
   };
 
   return (
     <form action="">
       <div className="grid grid-cols-12 gap-5 ">
-        <div className="col-span-6 flex flex-col space-y-8">
+        <div className="col-span-5 flex flex-col space-y-8">
           <div>
             <label
               htmlFor="name"
@@ -82,7 +88,7 @@ export default function EmailComponent() {
           </div>
         </div>
 
-        <div className="col-span-6 ">
+        <div className="col-span-7 ">
           <label
             htmlFor="message"
             className="block text-sm font-medium text-gray-700"
@@ -94,14 +100,22 @@ export default function EmailComponent() {
               id="message"
               name="message"
               rows={10}
-              
+              placeholder="Enter your message"
               value={form.message}
               onChange={handleForm}
-              className="shadow-sm focus:ring-main-red focus:border-main-red block w-full sm:text-sm border-gray-300 rounded-sm h-[272px]"
+              className="p-4 shadow-sm focus:ring-main-red focus:border-main-red block w-full sm:text-sm border-gray-300 rounded-sm h-[272px]"
               defaultValue={''}
             />
           </div>
         </div>
+
+      </div>
+      <div className='flex justify-end'>
+      <button
+        type="submit"
+        onClick={handleSubmit}
+      className='mt-5 bg-main-red text-white py-3 px-5 rounded-sm'
+      >Send Message</button>
       </div>
     </form>
   );

@@ -29,12 +29,21 @@ const Contact = () => {
           <div className="col-span-3">
             <div className="text-xl font-light">Company Info</div>
             <hr className="my-4 h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
-            <div>
+            <div className='border h-3/4 p-4 flex flex-wrap'>
               <p>
                 If you are in the middle of something and you don’t want to miss
                 that important call.
               </p>
-              <p className="flex">
+              <p className="flex flex-col">
+                Email: <a className="text-main-red">support@bigguyauto.com</a>
+              </p>
+              <p className="flex flex-col">
+                Phone: <a className="text-main-red">+1 (818) 645 - 7172</a>
+              </p>
+              <p className="flex flex-col">
+                Fax: <a className="text-main-red">support@bigguyauto.com</a>
+              </p>
+              <p className="flex flex-col">
                 Email: <a className="text-main-red">support@bigguyauto.com</a>
               </p>
             </div>
