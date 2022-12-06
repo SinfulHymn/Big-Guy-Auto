@@ -44,7 +44,7 @@ export default function EmailComponent() {
             email: '',
             subject: '',
             message: '',
-            status: 'Message sent successfully',
+            status: 'Message Sent Successfully',
             
           });
         } else {
@@ -89,7 +89,7 @@ export default function EmailComponent() {
                 className="p-4 shadow-sm focus:ring-main-red focus:border-main-red block w-full sm:text-sm border-gray-300 rounded-sm h-[50px]"
               />
             </div>
-            {!form.name && !!form.status && (
+            {!form.name && (form.status !="Message Sent Successfully") && (
               <RequiredMessage /> 
             )}
           </div>
@@ -111,9 +111,9 @@ export default function EmailComponent() {
                 id="email"
                 className="p-4 shadow-sm focus:ring-main-red focus:border-main-red block w-full sm:text-sm border-gray-300 rounded-sm h-[50px]"
               />
-              {!form.email && !!form.status && (
-                <RequiredMessage/>
-              )}
+              {!form.email && (form.status !="Message Sent Successfully") && (
+              <RequiredMessage /> 
+            )}
             </div>
           </div>
           <div>
@@ -133,9 +133,9 @@ export default function EmailComponent() {
                 id="subject"
                 className="p-4 shadow-sm focus:ring-main-red focus:border-main-red block w-full sm:text-sm border-gray-300 rounded-sm h-[50px]"
               />
-              {!form.subject && !!form.status && (
-                <RequiredMessage/>
-              )}
+              {!form.subject && (form.status !="Message Sent Successfully") && (
+              <RequiredMessage /> 
+            )}
             </div>
           </div>
         </div>
@@ -157,8 +157,8 @@ export default function EmailComponent() {
               onChange={handleForm}
               className="p-4 shadow-sm focus:ring-main-red focus:border-main-red block w-full sm:text-sm border-gray-300 rounded-sm h-[272px]"
             />
-            {!form.message && !!form.status && (
-              <RequiredMessage/>
+            {!form.message && (form.status !="Message Sent Successfully") && (
+              <RequiredMessage /> 
             )}
           </div>
         </div>
@@ -175,7 +175,7 @@ export default function EmailComponent() {
       {form.status && (
         <p className={classNames(" my-6 p-2 border",{
           "text-main-red border-main-red": form.status === "Message failed to send",
-          "text-green-800 border-green-800": form.status === "Message sent successfully",
+          "text-green-800 border-green-800": form.status === "Message Sent Successfully",
           "text-main-red  border-main-red": form.status === "Please fill out all fields",
           "text-yellow-800 border-yellow-800": form.status === "Sending...",
         })}>
