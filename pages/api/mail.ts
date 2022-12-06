@@ -2,6 +2,7 @@
 import mail from '@sendgrid/mail'
 import type { NextApiRequest, NextApiResponse } from 'next'
 
+console.log(process.env.SENDGRID_API_KEY)
 mail.setApiKey(process.env.SENDGRID_API_KEY)
 
 
