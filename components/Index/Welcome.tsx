@@ -2,7 +2,7 @@ import React from 'react';
 
 const Welcome = () => {
   return (
-    <div className=" space-y-10">
+    <div className=" space-y-10 p-6 ">
       <div>
         <div className=" border-l-2 border-main-red ">
           <div className="py-1 mx-6 ">
@@ -26,7 +26,7 @@ const Welcome = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-2">
+      <div className="grid md:grid-cols-2">
         <div>
           <div className=" border-l-2 border-main-red ">
             <div className="py-1 mx-6 ">

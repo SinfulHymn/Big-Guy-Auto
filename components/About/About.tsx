@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <Banner title="About Us" />
-      <div className="py-5 sm:py-10 ">
+      <div className="p-6 sm:py-10 ">
         <div className="container mx-auto flex flex-col">
           <div className=" font-normal text-lg ">About Us</div>
           <hr className="my-4 h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
