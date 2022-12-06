@@ -10,45 +10,73 @@ const About = () => {
           <div className=" font-normal text-lg ">About Us</div>
           <hr className="my-4 h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
           <div className="space-y-8">
-            <div className=' space-y-1'>
+            <div className=" space-y-1">
               <p className="text-2xl font-normal text-gray-800">Our mission</p>
               <p className="text-main-red font-medium text-xl">
                 Collision repair service in the City of San Fernando.
               </p>
-              <p className=" leading-loose text-gray-800">
-                Big Guy Auto Body strives to always assure great customer
-                service, along with building strong and reliable trust in the
-                work we accomplish for you. We always aim to thoroughly meet the
-                needs of what you want as our customer. Big Guy Auto Body has
-                been in business since 1998. With our years of experience, we
-                work towards genuine quality. In our years of experience, we
-                have worked with many big named companies and brands, such as
-                Los Angeles County Sheriff, Valley Crest, Anheuser Bush, Penske
-                Truck Leasing, Budweiser, and MT Towing Company. We offer only
-                the best craftsmanship and materials to get the job done. As
-                dedicated and committed as we are towards are work, we always
-                seek to put our customers first. We assure the most affordable
-                price for the most outstanding quality work. We, as Big Guy Auto
-                Body, proudly serves the San Fernando Area working towards
-                quality assurance for our customers and for our community.{' '}
-              </p>
+              <div className='space-y-4'>
+                <p className=" leading-loose text-gray-800">
+                At our family-owned auto collision repair shop, we are dedicated
+                to providing the highest quality services to our clients. We are
+                committed to providing the highest quality repair to restore
+                vehicles to their pre-accident condition, and to providing
+                exceptional customer service throughout the repair process. We
+                strive to be a trusted partner for individuals and companies in
+                the city of San Fernando and beyond, and to be known for our
+                expertise, professionalism, and dedication to excellence. </p>
+                <p className=" leading-loose text-gray-800">
+                In addition to our repair services, we are also dedicated to
+                being a responsible and active member of the community. We are
+                proud to serve the city of Los Angeles and the Los Angeles
+                Sheriff Department, and to support local organizations and
+                initiatives. </p>
+                <p className=" leading-loose text-gray-800">
+                Overall, our mission is to be the premier auto collision repair
+                shop in the area, known for our commitment to quality, customer
+                satisfaction, and community involvement. </p>
+              </div>
             </div>
-            <div className=' space-y-1'>
+            <div className=" space-y-1">
               <p className="text-2xl font-normal text-gray-800">About us</p>
               <p className="text-main-red font-medium text-xl">
                 Family owned Auto collision shop.
               </p>
-              <p className=" leading-loose text-gray-800">
-                The business first started with a passionate man in autos and
-                the ability to repair them. He decided to open shop in 1998 due
-                to working in the industry for his entire life before that. He
-                struggled to get started due to the small space he had, but his
-                drive to strive made him work towards his goal. In 2001 he
-                decided to relocate to the current location due to the
-                overwhelming clientel he was receiving. He received overwhelming
-                support and always work towards growing. Since then Big guy auto
-                body has only been striving.{' '}
-              </p>
+              <div className='space-y-4'>
+                <p className=" leading-loose text-gray-800">
+                  At our family-owned auto collision repair shop in the city of
+                  San Fernando, we have been providing high-quality services for
+                  over 15 years. Our team of experienced technicians is
+                  dedicated to restoring your vehicle to its pre-accident
+                  condition, using the latest tools and techniques in the
+                  industry.
+                </p>
+
+                <p className=" leading-loose text-gray-800">
+                  We have built a solid reputation by working with clients of
+                  all sizes, including well-known companies such as Budweiser,
+                  Penske, and Public Works. We are also proud to serve the city
+                  of Los Angeles and the Los Angeles Sheriff Department,
+                  providing them with reliable and timely repair services.
+                </p>
+
+                <p className=" leading-loose text-gray-800">
+                  In addition to our expertise, we are committed to providing
+                  exceptional customer service. We understand that being in an
+                  accident can be a stressful and overwhelming experience, and
+                  we do our best to make the repair process as smooth and
+                  hassle-free as possible. We offer free estimates, transparent
+                  pricing, and regular updates on the progress of your repair.
+                </p>
+
+                <p className=" leading-loose text-gray-800">
+                  We are confident in our ability to deliver the best possible
+                  service, and we look forward to the opportunity to work with
+                  you. Whether you need minor repairs or major collision work,
+                  we are ready to help. Contact us today to schedule an
+                  appointment.
+                </p>
+              </div>
             </div>
           </div>
         </div>
