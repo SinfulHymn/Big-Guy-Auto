@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import { useState } from 'react';
 
 export default function EmailComponent() {
@@ -5,42 +6,68 @@ export default function EmailComponent() {
     name: '',
     email: '',
     subject: '',
-    phone: '',
     message: '',
-    error: '',
-    success: '',
+    status: '',
   });
+
   const handleForm = (e) => {
     setForm({
       ...form,
       [e.target.name]: e.target.value,
     });
   };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { name, email, subject, message } = form;
     if (!name || !email || !subject || !message) {
       setForm({
         ...form,
-        error: 'Please fill out all fields',
+        status: 'Please fill out all fields',
       });
     } else {
       setForm({
         ...form,
-        success: 'Sending...',
+        status: 'Sending...',
       });
-      fetch('/api/mail', {
+      await fetch('/api/mail', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(form),
+      }).then((res) => {
+        if (res.status === 200) {
+          setForm({
+            ...form,
+            name: '',
+            email: '',
+            subject: '',
+            message: '',
+            status: 'Message sent successfully',
+            
+          });
+        } else {
+          setForm({
+            ...form,
+            status: 'Message failed to send',
+            
+          });
+        }
       });
     }
   };
 
+  // todo - how does fetch work?
+
+  function RequiredMessage (){
+    return(
+      <p className="text-main-red my-2">This Field is Required.</p>
+    )
+  }
+
   return (
-    <form>
+    <form action="">
       <div className="grid grid-cols-12 gap-4 ">
         <div className="col-span-5 flex flex-col space-y-8">
           <div>
@@ -62,8 +89,8 @@ export default function EmailComponent() {
                 className="p-4 shadow-sm focus:ring-main-red focus:border-main-red block w-full sm:text-sm border-gray-300 rounded-sm h-[50px]"
               />
             </div>
-            {!form.name && !!form.error && (
-              <p className="text-main-red my-2">This Field is Required.</p>
+            {!form.name && !!form.status && (
+              <RequiredMessage /> 
             )}
           </div>
 
@@ -84,8 +111,8 @@ export default function EmailComponent() {
                 id="email"
                 className="p-4 shadow-sm focus:ring-main-red focus:border-main-red block w-full sm:text-sm border-gray-300 rounded-sm h-[50px]"
               />
-              {!form.email && !!form.error && (
-                <p className="text-main-red my-2">This Field is Required.</p>
+              {!form.email && !!form.status && (
+                <RequiredMessage/>
               )}
             </div>
           </div>
@@ -106,8 +133,8 @@ export default function EmailComponent() {
                 id="subject"
                 className="p-4 shadow-sm focus:ring-main-red focus:border-main-red block w-full sm:text-sm border-gray-300 rounded-sm h-[50px]"
               />
-              {!form.subject && !!form.error && (
-                <p className="text-main-red my-2">This Field is Required.</p>
+              {!form.subject && !!form.status && (
+                <RequiredMessage/>
               )}
             </div>
           </div>
@@ -129,10 +156,9 @@ export default function EmailComponent() {
               value={form.message}
               onChange={handleForm}
               className="p-4 shadow-sm focus:ring-main-red focus:border-main-red block w-full sm:text-sm border-gray-300 rounded-sm h-[272px]"
-              defaultValue={''}
             />
-            {!form.message && !!form.error && (
-              <p className="text-main-red my-2">This Field is Required.</p>
+            {!form.message && !!form.status && (
+              <RequiredMessage/>
             )}
           </div>
         </div>
@@ -146,7 +172,16 @@ export default function EmailComponent() {
           Send Message
         </button>
       </div>
-      {form.error && <p className="text-main-red my-6 p-2 border border-main-red">{form.error}</p>}
+      {form.status && (
+        <p className={classNames(" my-6 p-2 border",{
+          "text-main-red border-main-red": form.status === "Message failed to send",
+          "text-green-800 border-green-800": form.status === "Message sent successfully",
+          "text-main-red  border-main-red": form.status === "Please fill out all fields",
+          "text-yellow-800 border-yellow-800": form.status === "Sending...",
+        })}>
+          {form.status}
+        </p>
+      )}
     </form>
   );
 }

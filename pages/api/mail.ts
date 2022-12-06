@@ -28,13 +28,18 @@ export default async function handler(
 
     const data = {
         to: 'bigguy@bigguyautobody.com',
-        from: `${email}`,
+        from:'bigguy@bigguyautobody.com',
         subject: `${subject}`,
         text: content,
         html: content.replace(/\r\n/g, '<br />')
     }
 
-    mail.send(data)
-
-  res.status(200).json({ status: 'OK' })
+    try {
+        await mail.send(data)
+        res.status(200).json({ status: 'success' })
+    } catch (error) {  
+        console.log(error)
+        res.status(400).json({ status: 'error' })
+    }
 }
+
