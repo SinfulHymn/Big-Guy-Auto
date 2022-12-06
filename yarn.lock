@@ -555,7 +555,7 @@
   dependencies:
     deepmerge "^4.2.2"
 
-"@sendgrid/mail@*":
+"@sendgrid/mail@^7.7.0":
   version "7.7.0"
   resolved "https://registry.npmjs.org/@sendgrid/mail/-/mail-7.7.0.tgz"
   integrity sha512-5+nApPE9wINBvHSUxwOxkkQqM/IAAaBYoP9hw7WwgDNQPxraruVqHizeTitVtKGiqWCKm2mnjh4XGN3fvFLqaw==
@@ -3876,6 +3876,11 @@ text-table@^0.2.0:
   version "0.2.0"
   resolved "https://registry.npmjs.org/text-table/-/text-table-0.2.0.tgz"
   integrity sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==
+
+three@*:
+  version "0.147.0"
+  resolved "https://registry.npmjs.org/three/-/three-0.147.0.tgz"
+  integrity sha512-LPTOslYQXFkmvceQjFTNnVVli2LaVF6C99Pv34fJypp8NbQLbTlu3KinZ0zURghS5zEehK+VQyvWuPZ/Sm8fzw==
 
 tiny-glob@^0.2.9:
   version "0.2.9"

@@ -4,14 +4,18 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 
 mail.setApiKey(process.env.SENDGRID_API_KEY)
 
+
 type Data = {
   status: string
 }
 
-export default function handler(
+
+
+export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
+    console.log(req.body)
     const { name, email, subject, message } = req.body
     
     const content = `
@@ -24,8 +28,8 @@ export default function handler(
 
     const data = {
         to: 'bigguy@bigguyautobody.com',
-        from: `test`,
-        subject: `test`,
+        from: `${email}`,
+        subject: `${subject}`,
         text: content,
         html: content.replace(/\r\n/g, '<br />')
     }
