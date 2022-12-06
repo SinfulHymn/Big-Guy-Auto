@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import { useState } from 'react';
 
-export default function EmailComponent() {
+export default function EmailComponent(){
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -134,10 +134,10 @@ export default function EmailComponent() {
                 id="subject"
                 className="p-4 shadow-sm focus:ring-main-red focus:border-main-red block w-full lg:text-sm border-gray-300 rounded-sm h-[50px]"
               />
-              {console.log(form.status)}
               {!form.subject && form.status !="Message Sent Successfully"  && form.status != "" && (
               <RequiredMessage /> 
             )}
+            
             </div>
           </div>
         </div>
