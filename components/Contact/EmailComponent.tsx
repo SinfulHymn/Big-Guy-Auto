@@ -69,7 +69,7 @@ export default function EmailComponent() {
   return (
     <form action="">
       <div className="grid grid-cols-12 gap-4 ">
-        <div className="col-span-5 flex flex-col space-y-8">
+        <div className="col-span-12 lg:col-span-5 flex flex-col space-y-8">
           <div>
             <label
               htmlFor="name"
@@ -86,10 +86,10 @@ export default function EmailComponent() {
                 type="text"
                 name="name"
                 id="name"
-                className="p-4 shadow-sm focus:ring-main-red focus:border-main-red block w-full sm:text-sm border-gray-300 rounded-sm h-[50px]"
+                className="p-4 shadow-sm focus:ring-main-red focus:border-main-red block w-full lg:text-sm border-gray-300 rounded-sm h-[50px]"
               />
             </div>
-            {!form.name && (form.status !="Message Sent Successfully") && (
+            {!form.name && form.status !="Message Sent Successfully"  && form.status != "" && (
               <RequiredMessage /> 
             )}
           </div>
@@ -109,13 +109,14 @@ export default function EmailComponent() {
                 type="email"
                 name="email"
                 id="email"
-                className="p-4 shadow-sm focus:ring-main-red focus:border-main-red block w-full sm:text-sm border-gray-300 rounded-sm h-[50px]"
+                className="p-4 shadow-sm focus:ring-main-red focus:border-main-red block w-full lg:text-sm border-gray-300 rounded-sm h-[50px]"
               />
-              {!form.email && (form.status !="Message Sent Successfully") && (
+              {!form.email && form.status !="Message Sent Successfully"  && form.status != "" && (
               <RequiredMessage /> 
             )}
             </div>
           </div>
+
           <div>
             <label
               htmlFor="subject"
@@ -131,16 +132,17 @@ export default function EmailComponent() {
                 type="text"
                 name="subject"
                 id="subject"
-                className="p-4 shadow-sm focus:ring-main-red focus:border-main-red block w-full sm:text-sm border-gray-300 rounded-sm h-[50px]"
+                className="p-4 shadow-sm focus:ring-main-red focus:border-main-red block w-full lg:text-sm border-gray-300 rounded-sm h-[50px]"
               />
-              {!form.subject && (form.status !="Message Sent Successfully") && (
+              {console.log(form.status)}
+              {!form.subject && form.status !="Message Sent Successfully"  && form.status != "" && (
               <RequiredMessage /> 
             )}
             </div>
           </div>
         </div>
 
-        <div className="col-span-7 ">
+        <div className="col-span-12 lg:col-span-7 ">
           <label
             htmlFor="message"
             className="block text-sm font-medium text-gray-700"
@@ -155,13 +157,14 @@ export default function EmailComponent() {
               placeholder="Enter your message"
               value={form.message}
               onChange={handleForm}
-              className="p-4 shadow-sm focus:ring-main-red focus:border-main-red block w-full sm:text-sm border-gray-300 rounded-sm h-[272px]"
+              className="p-4 shadow-sm focus:ring-main-red focus:border-main-red block w-full lg:text-sm border-gray-300 rounded-sm h-[272px]"
             />
-            {!form.message && (form.status !="Message Sent Successfully") && (
+            {!form.message && form.status !="Message Sent Successfully"  && form.status != "" && (
               <RequiredMessage /> 
             )}
           </div>
         </div>
+
       </div>
       <div className="flex justify-end">
         <button
