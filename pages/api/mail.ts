@@ -1,46 +1,40 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import mail from '@sendgrid/mail'
-import type { NextApiRequest, NextApiResponse } from 'next'
+import mail from '@sendgrid/mail';
+import type { NextApiRequest, NextApiResponse } from 'next';
 
-console.log(process.env.SENDGRID_API_KEY)
-mail.setApiKey(process.env.SENDGRID_API_KEY)
-
+mail.setApiKey(process.env.SENDGRID_API_KEY);
 
 type Data = {
-  status: string
-}
-
-
+  status: string;
+};
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-    console.log(req.body)
-    const { name, email, subject, message } = req.body
-    
-    const content = `
+  const { name, email, subject, message } = req.body;
+
+  const content = `
         Name: ${name}\r\n
         Email: ${email}\r\n
         Subject: ${subject}\r\n
         Message: ${message}
 
-    `
+    `;
 
-    const data = {
-        to: 'bigguy@bigguyautobody.com',
-        from:'bigguy@bigguyautobody.com',
-        subject: `${subject}`,
-        text: content,
-        html: content.replace(/\r\n/g, '<br />')
-    }
+  const data = {
+    to: 'bigguy@bigguyautobody.com',
+    from: 'bigguy@bigguyautobody.com',
+    subject: `${subject}`,
+    text: content,
+    html: content.replace(/\r\n/g, '<br />'),
+  };
 
-    try {
-        await mail.send(data)
-        res.status(200).json({ status: 'success' })
-    } catch (error) {  
-        console.log(error)
-        res.status(400).json({ status: 'error' })
-    }
+  try {
+    await mail.send(data);
+    res.status(200).json({ status: 'success' });
+  } catch (error) {
+    console.log(error);
+    res.status(400).json({ status: 'error' });
+  }
 }
-
