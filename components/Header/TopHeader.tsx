@@ -40,7 +40,7 @@ const TopHeader = () => {
 
                         <div className='flex flex-col ml-1.5 w-36 text-xs sm:text-sm items-center'>
                             <p>Call Us Now</p>
-                            <p>+1 (818) 645 7172</p>
+                            <p>+1 (818) 365 8018</p>
                             <p>Hablamos Espanol!</p>
                         </div>
                     </div>
